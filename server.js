@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
+const PORT = process.env.PORT || 5000
 //Controllers
 const porfolioController = require('./controllers/portfolioControler')
 const adminController = require('./controllers/adminController')
@@ -15,6 +16,6 @@ app.post('/portfolio', porfolioController.POST);
 
 app.get('/admin', adminController.GET);
 
-app.listen(9000, () => {
-  console.log(9000);
+app.listen(PORT, () => {
+  console.log(PORT);
 })
