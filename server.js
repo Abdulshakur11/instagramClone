@@ -11,8 +11,8 @@ app.use(express.urlencoded({extended:true}))
 app.set('view engine', 'ejs');
 app.use(express.json())
 
-app.get('/portfolio', porfolioController.GET);
-app.post('/portfolio', porfolioController.POST);
+app.get('/', porfolioController.GET);
+app.post('/', porfolioController.POST);
 
 app.get('/admin', adminController.GET);
 
