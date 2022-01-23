@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "card_title": "YouTube Clone",
+    "card_url": "https://youtube1clone.netlify.app",
+    "card_img": "https://i0.wp.com/apkmody.io/wp-content/uploads/2020/10/YouTube-Premium-MOD-APK-cover.jpg?resize=720%2C360&ssl=1"
+  },
+  {
+    "id": 2,
+    "card_title": "AbuTech",
+    "card_url": "https://abutechcompany.netlify.app",
+    "card_img": "https://abutechcompany.netlify.app/images/development-img-seven.png"
+  },
+  {
+    "id": 3,
+    "card_title": "Twitter clone",
+    "card_url": "https://pensive-allen-95aa72.netlify.app",
+    "card_img": "https://www.ixbt.com/img/n1/news/2020/3/3/twitter-logo_large.jpg"
+  },
+  {
+    "id": 4,
+    "card_title": "Adoya",
+    "card_url": "https://adoya.netlify.app",
+    "card_img": "https://adoya.netlify.app/images/site-logo.svg"
+  },
+  {
+    "id": 5,
+    "card_title": "Movies trailer",
+    "card_url": "https://movies-render.netlify.app/",
+    "card_img": "https://static1.moviewebimages.com/wordpress/wp-content/uploads/social/mw-og-img.png"
+  },
+  {
+    "id": 6,
+    "card_title": "Scooter Sharing",
+    "card_url": "https://maketexam.netlify.app",
+    "card_img": "https://maketexam.netlify.app/images/Bitmap.png"
+  }
+]
