@@ -1,78 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Admin || Home page</title>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--===============================================================================================-->
-		<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-		<!--===============================================================================================-->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="vendor/bootstrap/css/bootstrap.min.css"
-		/>
-		<!--===============================================================================================-->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
-		/>
-		<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
-		<!--===============================================================================================-->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="vendor/select2/select2.min.css"
-		/>
-		<!--===============================================================================================-->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="vendor/perfect-scrollbar/perfect-scrollbar.css"
-		/>
-		<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="css/util.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/admin.css" />
-		<!--===============================================================================================-->
-	</head>
-	<body>
-		<div class="limiter">
-			<div class="container-table100">
-				<div class="wrap-table100">
-					<div class="table">
-						<div class="row header">
-							<div class="cell">Full Name</div>
-							<div class="cell">Email</div>
-							<div class="cell">Message</div>
-						</div>
-
-						<% for(let data of allData) { %>
-						<form method="DELETE" action="/admin">
-							<div class="row">
-								<div class="cell" data-title="Full Name"><%= data.full_name %></div>
-								<div class="cell" data-title="Age"><%= data.email %></div>
-								<div class="cell" data-title="Job Title">
-									<%= data.message %>
-									<!-- <button type="submit" class="del-btn">Delete</button> -->
-								</div>
-							</div>
-						</form>
-						<% } %>
-					</div>
-				</div>
-			</div>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/admin.css">
+	<title>Document</title>
+</head>
+<body>
+	<section>
+		<!--for demo wrap-->
+		<h1>Fixed Table header</h1>
+		<div class="tbl-header">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<thead>
+					<tr>
+						<th>Full Name</th>
+						<th>Email</th>
+						<th>Message</th>
+					</tr>
+				</thead>
+			</table>
 		</div>
-
-		<!--===============================================================================================-->
-		<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-		<!--===============================================================================================-->
-		<script src="vendor/bootstrap/js/popper.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-		<!--===============================================================================================-->
-		<script src="vendor/select2/select2.min.js"></script>
-		<!--===============================================================================================-->
-		<script src="js/main.js"></script>
-	</body>
+		<div class="tbl-content">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody>
+					<% for(let data of allData) { %> 
+					<tr>
+						<td><%= data.full_name %></td>
+						<td><%= data.email %></td>
+						<td><%= data.message %> </td>
+					</tr>
+					<% } %> 
+				</tbody>
+			</table>
+		</div>
+	</section>
+	
+	
+	<!-- follow me template -->
+	<div class="made-with-love">
+		Made with
+		<i>♥</i> by
+		<a target="_blank" href="https://codepen.io/nikhil8krishnan">Nikhil Krishnan</a>
+	</div>
+</body>
 </html>
