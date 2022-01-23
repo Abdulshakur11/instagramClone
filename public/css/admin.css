@@ -132,6 +132,7 @@ iframe {
 }
 
 .row {
+  width: 100%;
   display: table-row;
   background: #fff;
 }
