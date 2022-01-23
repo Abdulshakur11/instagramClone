@@ -25,6 +25,6 @@ module.exports = {
 		allUsers.push({ id: allUsers.length + 1, ...formData });
 
 		users.write(allUsers);
-		res.redirect("/portfolio");
+		res.redirect("/");
 	},
 };
